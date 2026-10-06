@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Проверка и генератор Schema / JSON-LD онлайн - HITZ</title>
+<meta name="description" content="Проверьте Schema.org и JSON-LD по URL или коду. Найдите ошибки и скачайте готовую исправленную разметку бесплатно.">
+<!-- Оригинал: https://hitz.agency/tools/schema-check. Каноническая ссылка ведет на онлайн-версию HITZ. -->
+<link rel="canonical" href="https://hitz.agency/tools/schema-check">
+<link rel="alternate" hreflang="ru" href="https://hitz.agency/tools/schema-check">
+<link rel="alternate" hreflang="en" href="https://hitz.agency/en/tools/schema-check">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/base.css">
+<link rel="stylesheet" href="assets/tool.css">
+</head>
+<body>
+<header class="oss-bar">
+  <div class="oss-bar__in">
+    <a class="oss-bar__logo" href="https://hitz.agency/" aria-label="HITZ, на главную"><img src="assets/hitz-logo.svg" alt="HITZ" width="92" height="30"></a>
+    <a href="en/" hreflang="en">English</a>
+    <a href="https://github.com/aksanovdgtl-cmyk/jsonld-schema-check">Исходный код</a>
+    <a class="oss-bar__live" href="https://hitz.agency/tools/schema-check">Онлайн-версия ↗</a>
+  </div>
+</header>
+<main>
+<div class="t123">
+<div class="hzs" id="hzs-schema-tool" data-lang="ru"> <section class="hzs-hero hzs-shell"> <div class="hzs-hero__copy"> <p class="hzs-eye">HITZ · БЕСПЛАТНЫЙ ИНСТРУМЕНТ</p> <h1>Проверка и генератор <span>Schema / JSON-LD</span></h1> <p class="hzs-lead">Найдите ошибки в структурированных данных и получите готовый код для страницы.</p> </div> <form class="hzs-card" id="hzs-form"> <p class="hzs-status"><i></i>ЭКСПРЕСС-ПРОВЕРКА</p> <div class="hzs-tabs" role="tablist"><button class="is-active" data-mode="url" type="button">По URL</button><button data-mode="code" type="button">Вставить код</button></div> <label for="hzs-input">Адрес страницы</label> <input id="hzs-input" type="url" placeholder="https://example.com/page" required> <label for="hzs-type">Тип страницы</label> <select id="hzs-type"><option value="auto">Определить автоматически</option><option>WebPage</option><option>Article</option><option>Service</option><option>Organization</option><option>LocalBusiness</option><option>Product</option><option>FAQPage</option></select> <button class="hzs-primary" type="submit">Проверить разметку ↗</button> <p class="hzs-error" id="hzs-error" hidden></p> <p class="hzs-note">Проверка не вносит изменений на сайт и не сохраняет введенные данные.</p> <div class="hzs-facts"><div><strong>8</strong><span>типов разметки</span></div><div><strong>10</strong><span>секунд до результата</span></div></div> </form> </section> <section class="hzs-loading" id="hzs-loading" hidden> <div class="hzs-shell"><div class="hzs-loading__head"><span>ИДЕТ АНАЛИЗ</span><strong id="hzs-percent">0%</strong></div><div class="hzs-progress"><i id="hzs-progress"></i></div><div class="hzs-stages" id="hzs-stages"><p><span>01</span>Открываем страницу</p><p><span>02</span>Извлекаем структурированные данные</p><p><span>03</span>Проверяем типы и свойства</p><p><span>04</span>Сверяем разметку с метаданными</p><p><span>05</span>Собираем исправленный JSON-LD</p></div></div> </section> <section class="hzs-results hzs-shell" id="hzs-results" hidden aria-live="polite"> <p class="hzs-eye">РЕЗУЛЬТАТ ПРОВЕРКИ</p> <div class="hzs-result-head"><div class="hzs-score" id="hzs-score"><div><strong>0</strong><span>из 100</span></div></div><div><h2 id="hzs-title">Проверка завершена</h2><p id="hzs-summary"></p><a id="hzs-source" target="_blank" rel="noopener" hidden>Открыть проверенную страницу ↗</a></div></div> <div class="hzs-types"><span>НАЙДЕННЫЕ ТИПЫ</span><div id="hzs-types"></div></div> <div class="hzs-result-grid"><div class="hzs-issues"><h3>Что нужно исправить</h3><div id="hzs-issues"></div></div><div class="hzs-code"><div><span>ГОТОВЫЙ JSON-LD</span><div><button id="hzs-copy" type="button">Копировать</button><button id="hzs-download" type="button">Скачать</button></div></div><pre><code id="hzs-code"></code></pre></div></div> </section> <section class="hzs-how"><div class="hzs-shell"><p class="hzs-eye">КАК ЭТО РАБОТАЕТ</p><h2>От проверки до готового кода</h2><div class="hzs-how__grid"><article><span>01</span><h3>Укажите страницу</h3><p>Вставьте URL или исходный JSON-LD.</p></article><article><span>02</span><h3>Получите разбор</h3><p>Покажем ошибки, пропуски и спорные свойства.</p></article><article><span>03</span><h3>Заберите исправление</h3><p>Скопируйте готовую разметку и добавьте ее в HEAD.</p></article></div></div></section> <section class="hzs-blog"><div class="hzs-shell"><div><p class="hzs-eye">РАЗБОР В БЛОГЕ</p><h2>Как структурированные данные помогают поиску и нейросетям</h2><p>Разбираем, какую разметку ставить на услуги, статьи и страницы компании.</p></div><a href="https://hitz.agency/blog">Читать статьи ↗</a></div></section> <section class="hzs-faq hzs-shell"><p class="hzs-eye">ВОПРОСЫ ОБ ИНСТРУМЕНТЕ</p><h2>FAQ</h2><details><summary><span>01</span>Что проверяет инструмент<i>+</i></summary><p>Синтаксис JSON-LD, типы Schema.org, ключевые свойства, абсолютные URL и основные сигналы страницы.</p></details><details><summary><span>02</span>Можно проверить страницу без готовой разметки<i>+</i></summary><p>Да. Инструмент соберет базовый JSON-LD по найденным данным сайта.</p></details><details><summary><span>03</span>Гарантирует ли разметка расширенный результат<i>+</i></summary><p>Нет. Корректная разметка помогает понять страницу, но решение о показе результата принимает поисковая система.</p></details><details><summary><span>04</span>Куда вставлять готовый JSON-LD<i>+</i></summary><p>Внутрь HEAD страницы или через специальное поле платформы. На Tilda это дополнительный HTML-код в настройках страницы. Перед внедрением можно <a href="https://hitz.agency/audit" style="color:#22f360;text-decoration:underline;text-underline-offset:3px">проверить сайт по 40 параметрам</a>.</p></details></section> </div>
+<script src="assets/js/tool.js"></script>
+</div>
+</main>
+<footer class="oss-foot">
+  <div class="oss-foot__in">
+    <span class="oss-foot__copy">© 2026 HITZ, GEO-агентство. «Проверка и генератор Schema / JSON-LD», открытая версия под лицензией MIT.</span>
+    <a href="https://hitz.agency/tools">Все инструменты HITZ</a>
+    <a href="https://github.com/aksanovdgtl-cmyk/jsonld-schema-check">GitHub</a>
+  </div>
+</footer>
+</body>
+</html>

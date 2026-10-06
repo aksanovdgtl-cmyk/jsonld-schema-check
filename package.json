@@ -1,0 +1,52 @@
+{
+  "name": "jsonld-schema-check",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Schema.org JSON-LD checker: finds and parses blocks on a page, lists types, flags syntax errors and relative URLs, returns clean JSON-LD. Web UI + Worker API. By HITZ, GEO agency.",
+  "author": {
+    "name": "HITZ",
+    "url": "https://hitz.agency"
+  },
+  "contributors": [
+    {
+      "name": "Marat Aksanov",
+      "url": "https://aksanov.digital"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://hitz.agency/tools/schema-check",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aksanovdgtl-cmyk/jsonld-schema-check.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aksanovdgtl-cmyk/jsonld-schema-check/issues"
+  },
+  "keywords": [
+    "schema-org",
+    "json-ld",
+    "structured-data",
+    "rich-results",
+    "validator",
+    "generator",
+    "generative-engine-optimization",
+    "seo-tools",
+    "cloudflare-workers",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "tsc --noEmit",
+    "test": "node --test \"test/*.test.*\""
+  },
+  "devDependencies": {
+    "miniflare": "4.20260730.0",
+    "typescript": "6.0.3",
+    "wrangler": "4.147.0"
+  }
+}

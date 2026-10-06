@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Schema and JSON-LD Checker: Validate and Generate</title>
+<meta name="description" content="Check Schema.org and JSON-LD by URL or by code. See errors, gaps, and disputed properties, then copy a corrected block. Free, no signup.">
+<!-- Оригинал: https://hitz.agency/en/tools/schema-check. Каноническая ссылка ведет на онлайн-версию HITZ. -->
+<link rel="canonical" href="https://hitz.agency/en/tools/schema-check">
+<link rel="alternate" hreflang="ru" href="https://hitz.agency/tools/schema-check">
+<link rel="alternate" hreflang="en" href="https://hitz.agency/en/tools/schema-check">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/tool-en.css">
+</head>
+<body>
+<header class="oss-bar">
+  <div class="oss-bar__in">
+    <a class="oss-bar__logo" href="https://hitz.agency/en" aria-label="HITZ home"><img src="../assets/hitz-logo.svg" alt="HITZ" width="92" height="30"></a>
+    <a href="../" hreflang="ru">Русский</a>
+    <a href="https://github.com/aksanovdgtl-cmyk/jsonld-schema-check">Source code</a>
+    <a class="oss-bar__live" href="https://hitz.agency/en/tools/schema-check">Live version ↗</a>
+  </div>
+</header>
+<main>
+<div class="t123">
+<div class="hzs" id="hzs-schema-tool" data-lang="en"> <section class="hzs-hero hzs-shell"> <div class="hzs-hero__copy"> <p class="hzs-eye">HITZ · FREE TOOL</p> <h1>Schema and <span>JSON-LD checker</span></h1> <p class="hzs-lead">Find the errors in your structured data and get a ready block for the page.</p> </div> <form class="hzs-card" id="hzs-form"> <p class="hzs-status"><i></i>QUICK CHECK</p> <div class="hzs-tabs" role="tablist"><button class="is-active" data-mode="url" type="button">By URL</button><button data-mode="code" type="button">Paste code</button></div> <label for="hzs-input">Page URL</label> <input id="hzs-input" type="url" placeholder="https://example.com/page" required> <label for="hzs-type">Page type</label> <select id="hzs-type"><option value="auto">Detect automatically</option><option>WebPage</option><option>Article</option><option>Service</option><option>Organization</option><option>LocalBusiness</option><option>Product</option><option>FAQPage</option></select> <button class="hzs-primary" type="submit">Check markup ↗</button> <p class="hzs-error" id="hzs-error" hidden></p> <p class="hzs-note">The check makes no changes to your site and does not store what you enter.</p> <div class="hzs-facts"><div><strong>8</strong><span>markup types</span></div><div><strong>10</strong><span>seconds to a result</span></div></div> </form> </section> <section class="hzs-loading" id="hzs-loading" hidden> <div class="hzs-shell"><div class="hzs-loading__head"><span>ANALYSIS IN PROGRESS</span><strong id="hzs-percent">0%</strong></div><div class="hzs-progress"><i id="hzs-progress"></i></div><div class="hzs-stages" id="hzs-stages"><p><span>01</span>Opening the page</p><p><span>02</span>Extracting structured data</p><p><span>03</span>Checking types and properties</p><p><span>04</span>Comparing markup with metadata</p><p><span>05</span>Building corrected JSON-LD</p></div></div> </section> <section class="hzs-results hzs-shell" id="hzs-results" hidden aria-live="polite"> <p class="hzs-eye">CHECK RESULT</p> <div class="hzs-result-head"><div class="hzs-score" id="hzs-score"><div><strong>0</strong><span>out of 100</span></div></div><div><h2 id="hzs-title">Check complete</h2><p id="hzs-summary"></p><a id="hzs-source" target="_blank" rel="noopener" hidden>Open the checked page ↗</a></div></div> <div class="hzs-types"><span>MARKUP TYPES FOUND</span><div id="hzs-types"></div></div> <div class="hzs-result-grid"><div class="hzs-issues"><h3>What to fix</h3><div id="hzs-issues"></div></div><div class="hzs-code"><div><span>READY JSON-LD</span><div><button id="hzs-copy" type="button">Copy</button><button id="hzs-download" type="button">Download</button></div></div><pre><code id="hzs-code"></code></pre></div></div> </section> <section class="hzs-how"><div class="hzs-shell"><p class="hzs-eye">HOW IT WORKS</p><h2>From check to ready code</h2><div class="hzs-how__grid"><article><span>01</span><h3>Point to the page</h3><p>Paste a URL or your existing JSON-LD.</p></article><article><span>02</span><h3>Read the breakdown</h3><p>We show errors, gaps, and disputed properties.</p></article><article><span>03</span><h3>Take the fix</h3><p>Copy the corrected markup and add it to the HEAD.</p></article></div></div></section> <section class="hzs-blog"><div class="hzs-shell"><div><p class="hzs-eye">ARTICLE</p><h2>How structured data helps search engines and AI systems</h2><p>Which markup to use for services, articles, and company pages.</p></div><a href="https://hitz.agency/blog">Read the articles ↗</a></div></section> <section class="hzs-next"><div class="hzs-shell"><p class="hzs-eye">NEXT STEP</p><div class="hzs-next__links"><a href="https://hitz.agency/en/tools/geo-audit">Run a GEO page audit</a><a href="https://hitz.agency/en/tools/brand-entity">Check brand entity</a><a href="https://hitz.agency/en">GEO services</a><a href="https://hitz.agency/en/tools">All tools</a></div></div></section><section class="hzs-faq hzs-shell"><p class="hzs-eye">QUESTIONS ABOUT THE TOOL</p><h2>FAQ</h2><details><summary><span>01</span>What does the tool check<i>+</i></summary><p>JSON-LD syntax, Schema.org types, key properties, absolute URLs, and the main page signals.</p></details><details><summary><span>02</span>Can I check a page that has no markup yet<i>+</i></summary><p>Yes. The tool builds a basic JSON-LD from the data it finds on the site.</p></details><details><summary><span>03</span>Does markup guarantee a rich result<i>+</i></summary><p>No. Correct markup helps a search engine understand the page, but the decision to show a rich result belongs to the search engine.</p></details><details><summary><span>04</span>Where do I put the generated JSON-LD<i>+</i></summary><p>Inside the page HEAD, or through your platform’s own field. On Tilda that is the extra HTML code in page settings.</p></details></section> </div>
+<script src="../assets/js/en/tool-en.js"></script>
+</div>
+</main>
+<footer class="oss-foot">
+  <div class="oss-foot__in">
+    <span class="oss-foot__copy">© 2026 HITZ, GEO agency. Schema / JSON-LD Checker, open-source version under the MIT license.</span>
+    <a href="https://hitz.agency/en/tools">All HITZ tools</a>
+    <a href="https://github.com/aksanovdgtl-cmyk/jsonld-schema-check">GitHub</a>
+  </div>
+</footer>
+</body>
+</html>
